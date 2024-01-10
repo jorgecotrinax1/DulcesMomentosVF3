@@ -1,0 +1,79 @@
+body {
+    font-family: 'Poltawski Nowy',serif;
+    margin: 0;
+    padding: 0;
+    background-color: bisque;
+  }
+.checkoutb {
+  padding-top: 100px;
+}
+.checkout-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #79685b;
+    border-radius: 5px;
+  }
+
+  /* Animaciones */
+  .fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 0.5s ease-in-out forwards;
+  }
+
+  @keyframes fadeInAnimation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  /* Paleta de colores */
+  :root {
+    --primary-color: #241e1f;
+    --secondary-color: #4d4646;
+    --accent-color: #f57224;
+  }
+
+  /* Estilo de botones */
+  .boton-regresar,
+  .boton-compra {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: #FFF;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  .boton-regresar:hover,
+  .boton-compra:hover {
+    background-color: var(--secondary-color);
+  }
+
+  /* Contenedor de item estilos */
+  .contenedor-item {
+    margin-bottom: 20px;
+  }
+
+  /* Selector de cantidad Estilos*/
+  .seleccionar-cantidad {
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    background-color: #FFF;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    text-align: center;
+    line-height: 30px;
+  }
+
+  /* Comprar posicionamiento botones */
+  .contenedor-boton {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }

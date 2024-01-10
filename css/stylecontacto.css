@@ -1,0 +1,85 @@
+/*Grilla*/
+.grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 700px;
+  
+   
+  }
+  .col1{
+    background: radial-gradient(circle, rgba(179,162,149,1) 55%, rgba(110,59,21,1) 100%);
+    padding: 1em;
+    border: 10px double white;
+  
+  }
+  
+  h1{
+    color: black; 
+  }
+  
+  .img1{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border: 10px solid white;
+  
+   
+  }
+  
+  
+  
+  
+  
+  #ground{
+    border: 10px double white;
+    border-radius: 80px;
+    padding-top: 1%;
+  
+  font-family: "Poltawski Nowy", "Book Antiqua", Palatino, serif;
+  font-size: 20px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  color: #ffffff;
+  font-weight: normal;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  }
+  
+  /*---------------------------------*/
+   /*tabla*/
+   table.blueTable {
+    border: 1px solid #1C6EA4;
+    background-color: #EEEEEE;
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+  }
+  table.blueTable td, table.blueTable th {
+    border: 1px solid #AAAAAA;
+    padding: 3px 2px;
+  }
+  table.blueTable tbody td {
+    font-size: 13px;
+    color: #000000;
+  }
+  table.blueTable thead {
+    background: #5D4847;
+    background: -moz-linear-gradient(top, #857675 0%, #6d5a59 66%, #5D4847 100%);
+    background: -webkit-linear-gradient(top, #857675 0%, #6d5a59 66%, #5D4847 100%);
+    background: linear-gradient(to bottom, #857675 0%, #6d5a59 66%, #5D4847 100%);
+  }
+  table.blueTable thead th {
+    font-size: 15px;
+    font-weight: bold;
+    color: #FFFFFF;
+  }
+  table.blueTable tfoot {
+    font-size: 13px;
+    font-weight: bold;
+  }
+  table.blueTable tfoot td {
+    font-size: 13px;
+  }
+  /*para el nav en moviles mover a resposive si es posible*/

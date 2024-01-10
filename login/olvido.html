@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/stylelogin.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Recuperar Usuario</title>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <div class="formulario">
+        <h1>Recuperar Usuario</h1>
+        <form id="ajax-form" action="" method="post">
+            <div class="username">
+                <input type="email" name="email" required placeholder="Ingrese correo electrónico">
+                <label>Correo Electrónico</label>
+            </div>
+            <input type="submit" name="submit" value="Enviar">
+            <div class="registrarse">
+                <a href="../login.php">Volver al Inicio de sesión</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+<script>
+    (function(){
+        emailjs.init("HMGyred1JrkLOyN3v");
+    })();
+</script>
+<script>
+document.getElementById('ajax-form').addEventListener('submit', function(event) {
+event.preventDefault(); // Evita que el formulario se envíe de forma predeterminada
+// Recopila los datos del formulario
+var form = document.getElementById('ajax-form');
+var email = form.elements.email.value;
+var message = "Este correo te permite recuperar contraseña";
+// Configura los parámetros para el correo electrónico
+var params = {
+  email: email,
+  message: message
+};
+
+// Envía el formulario utilizando EmailJS
+emailjs.send('service_n8xrhpe', 'template_qmxpvwn', params)
+  .then(function(response) {
+    console.log('El formulario se ha enviado correctamente', response);
+    alert("Se ha enviado el correo");
+    // Aquí puedes agregar tu propia lógica después de enviar el formulario
+  }, function(error) {
+    console.error('Error al enviar el formulario', error);
+    alert("No se ha enviado el correo");
+    // Aquí puedes agregar tu propia lógica en caso de error
+  });
+});
+</script>
